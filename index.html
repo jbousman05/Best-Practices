@@ -11,7 +11,7 @@
 <body>
     <section>
         <nav>
-            <img src="./assets/FES.svg" alt="" />
+            <img src="./assets/FES.svg" class="logo" alt="">
             <ul>
                 <li><a href="#About">About</a></li>
                 <li><a href="#Discordt">Discord</a></li>
@@ -19,10 +19,12 @@
             </ul>
         </nav>
         <header>
-            <div>
-                <h1>Best place to learn frontend</h1>
-                <p>Go from absolute beginner to pro with a simplified process</p>
-                <button>Start Now</button>
+            <div class="row">
+                <div>
+                    <h1>Best place to learn frontend</h1>
+                    <p class="subheader">Go from absolute beginner to pro with a simplified process</p>
+                    <button>Start Now</button>
+                </div>
             </div>
             <figure>
                 <img src="./assets/laptop.png" alt="Home page image" />
@@ -33,31 +35,39 @@
     <main>
         <section id="about">
             <h2>About</h2>
-            <div>
-                <p>
-                    dlkja;lskdjflksjdl;kfjas;lkdjf;lkasjd;flkjsa;ld
-                </p>
-                <p>
-                    dlkja;lskdjflksjdl;kfjas;lkdjf;lkasjd;flkjsa;ldlskadjflk;sadjlkfjasl;kdjflkasjdlk;fj;aslkdF
-                </p>
+            <div class="row">
+                <div class="section__description">
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">
+                            Paragraphs are the building blocks of papers. Many students define paragraphs in terms of length: a paragraph is a group of at least five sentences, a paragraph is half a page long, etc. In reality, though, the unity and coherence of ideas among sentences is what constitutes a paragraph. A paragraph is defined as “a group of sentences or a single sentence that forms a unit” (Lunsford and Connors 116). Length and appearance do not determine whether a section in a paper is a paragraph. For instance, in some styles of writing, particularly journalistic styles, a paragraph can be just one sentence long. Ultimately, a paragraph is a sentence or group of sentences that support one main idea. In this handout, we will refer to this as the “controlling idea,” because it controls what happens in the rest of the paragraph.
+                        </p>
+                        <p class="section__description--para">
+                            Paragraph development begins with the formulation of the controlling idea. This idea directs the paragraph’s development. Often, the controlling idea of a paragraph will appear in the form of a topic sentence. In some cases, you may need more than one sentence to express a paragraph’s controlling idea.
+                        </p>
+                    </div>            
+                    <figure class="about__img--wrapper">
+                        <img src="/assets/about.jpg" alt="About" />
+                    </figure>
+                </div>
             </div>
-            <figure>
-                <img src="/assets/about.jpg" alt="About" />
-            </figure>
         </section>
 
-        <section id="dicord">
+        <section id="discord">
             <h2>Discord</h2>
-            <figure>
-                <img src="./assets/discord.png" alt="Discord" />
-            </figure>
-            <div>
-                <p>
-                    lkdsjnflkasjdlfkjas;ldkjf;lkasdj
-                </p>
-                <p>
-                    lsakdjflksajdf;laskjdf;lkasjdf;lkasjd;lkfj
-                </p>
+            <div class="row">
+                <div class="section__description">
+                    <figure class="about__img--wrapper">
+                        <img src="./assets/discord.png" alt="Discord" />
+                    </figure>
+                    <div class="section__description--wrapper">
+                        <p class="section__description--para">
+                            Paragraph development continues with an elaboration on the controlling idea, perhaps with an explanation, implication, or statement about significance. Our example offers a possible explanation for the pervasiveness of the myth.
+                        </p>
+                        <p class="section__description--para">
+                            Continue the pattern of giving examples and explaining them until all points/examples that the writer deems necessary have been made and explained. NONE of your examples should be left unexplained. You might be able to explain the relationship between the example and the topic sentence in the same sentence which introduced the example. More often, however, you will need to explain that relationship in a separate sentence.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -65,21 +75,21 @@
             <h2>Contact</h2>
             <form action="">
                 <span>Email</span>
-                <input type="text" placeholder="jane@ex.com">
+                <input type="email" placeholder="jane@example.com">
                 <span>Message</span>
-                <textarea type="text" placeholder="jane@ex.com"></textarea>
-                <button>Submit</button>
+                <textarea type="text" placeholder="Cool Website, lets get connected"></textarea>
+                <button>Contact Us!</button>
             </form>
         </section>
     </main>
 
     <footer>
-        <img src="./assets/FES.svg" alt="">
-        <div>
-            <a href="#about">About</a>
-            <a href="#discord">Discord</a>
-            <a href="#contact">Contact</a>
-            <a href="#">Courses</a>
+        <img class="footer__logo" src="./assets/FES.svg" alt="">
+        <div class="footer__links">
+            <a class="footer__link" href="#about">About</a>
+            <a class="footer__link" href="#discord">Discord</a>
+            <a class="footer__link" href="#contact">Contact</a>
+            <a class="footer__link" href="#">Courses</a>
         </div>
         <p>Copyright Frontend Simplified</p>
     </footer>
